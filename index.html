@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Lite</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1ba2cf90f3.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./assests/logo.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <section>
+
+        <nav>
+
+            <span><a href="index.html"><i class="fa fa-leaf"></i> Farm Lite</a></span>
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="buy.html">Buy & Sell</a></li>
+                <li><a href="calci.html">Profit & Loss</a></li>
+                <li><a href="guide.html">Farming Guide</a></li>
+                <li><span onclick="openBucket()"><i size="large" class="fas fa-shopping-cart"></i></span>
+                    <span class="items-count"></span>
+                </li>
+                <li><a href="imagepro.html"><i size="small" class="fas fa-camera"></i></a></li>
+
+            </ul>
+ 
+            <span onclick="openBucket()" class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+
+        </nav>
+        <main class="intro">
+
+            <div>
+               <p> <span> A farmer is a person engaged in agriculture, raising living organisms for food or raw materials. The term usually applies to people who do some combination of raising field crops, orchards, vineyards, poultry, or other livestock. A farmer might own the farmed land or might work as a laborer on land owned by others, but in advanced economies, a farmer is usually a farm owner, while employees of the farm are known as farm workers, or farmhands. However, in the not so distant past, a farmer was a person who promotes or improves the growth of (a plant, crop, etc.) by labor and attention, land or crops or raises animals (as livestock or fish).
+
+                   Over 1/2 billion farmers are smallholders, most of whom are in developing countries, and who economically support almost two billion people. Globally, women constitute more than 40% of agricultural employees.</span></p>
+            </div>
+
+        </main>
+        <main class="crop">
+          
+        <span><img height="100%" width="28%" src="assests/img1.jpg">
+        <img height="100%" width="28%" src="assests/img2.png">
+        <img height="100%" width="25%"src="assests/img3.jpg">
+        </span>
+
+
+         <button class="btn">
+            <a href="crop.html">Crop Rotation <i class="fas fa-leaf"></i></a>
+          </button>
+
+        </main>
+        <main class="weatherbg">
+            
+            <span>Find out what's wrong with your crop.</span>
+            <button> 
+              <a href="imagepro.html">Click here!<i class="fas fa-cloud"></i></a>
+            </button>
+          
+          
+    </main>
+        <main class="weatherbg">
+            
+                <span>Weather Prediction</span>
+                <button> 
+                  <a href="weather.html">Check weather now <i class="fas fa-cloud"></i></a>
+                </button>
+              
+              
+        </main>
+
+        <footer>
+
+            <span><a href=""><i class="fas fa-shopping-bag"></i>Farm Lite</a></span>
+
+            <ul>
+
+                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                <li><span onclick="openBucket()"><i class="fas fa-shopping-cart"></i></span>
+                    <span class="bottom-items-count"></span>
+                </li>
+
+            </ul>
+
+        </footer>
+
+        <div class="cart">
+
+            <header> <span><a href="index.html"><i class="fas fa-shopping-bag"></i> Farm Lite</a></span> <span
+                    class="exit"><i class="fas fa-times"></i></span> </header>
+
+            <main>
+
+                <ol>
+                    <li>Item-Name</li>
+                    <li>Qty</li>
+                    <li>Total</li>
+                </ol>
+
+                <section>
+
+                    <ul id="ul"></ul>
+
+                </section>
+
+            </main>
+
+            <footer>
+
+                <ul>
+                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+
+            </footer>
+
+        </div>
+
+    </section>
+
+    <script>
+
+        const top_items_count = document.querySelector('.items-count'),
+            bottom_items_count = document.querySelector('.bottom-items-count'),
+            exit = document.querySelector('.exit'),
+            bucket = document.querySelector('.cart').style;
+
+        top_items_count.innerHTML = 0;
+        bottom_items_count.innerHTML = 0;
+
+        function openBucket() {
+            bucket.visibility = "visible";
+            bucket.opacity = "1";
+            bucket.zIndex = "9";
+            bucket.transition = "all 0.5s";
+        }
+
+        exit.addEventListener('click', () => {
+            bucket.visibility = "hidden";
+            bucket.opacity = "0";
+            bucket.zIndex = "-9";
+            bucket.transition = "all 0.5s";
+        });
+
+        top_items_count.innerHTML = count;
+        bottom_items_count.innerHTML = count;
+
+
+    </script>
+
+</body>
+
+</html>

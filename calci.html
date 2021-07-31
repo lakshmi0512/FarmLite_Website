@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Lite</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1ba2cf90f3.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./assests/logo.png" type="image/x-icon">
+</head>
+
+<body>
+  <section>
+
+    <nav>
+
+        <span><a href="index.html"><i class="fa fa-leaf"></i> Farm Lite</a></span>
+
+        <ul>
+
+          <ul>
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="buy.html">Buy & Sell</a></li>
+            <li><a href="calci.html">Profit & Loss</a></li>
+            <li><a href="guide.html">Farming Guide</a></li>
+            <li><span onclick="openBucket()"><i size="large" class="fas fa-shopping-cart"></i></span>
+                <span class="items-count"></span>
+            </li>
+            <li><a href="imagepro.html"><i size="small" class="fas fa-camera"></i></a></li>
+
+        </ul>
+
+        <span onclick="openBucket()" class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+
+    </nav>
+  <div id="calc" class="container-fluid">
+    
+        <div class="spacer-0">
+          <h1 class="text-success">Profit & Loss Visual Calculator</h1>
+  
+          <div class="spacer-2">
+            <div class="form-group">
+              <label>Amount of sales ($)</label>
+              <input id="input-sales" type="number" 
+                     class="form-control" required />
+            </div>
+            <div class="form-group">
+              <label>Amount of expenses ($)</label>
+              <input id="input-losses" type="number" 
+                     class="form-control" required />
+            </div>
+  
+            <div id="profit-n-loss-result" 
+                 class="alert alert-primary d-none"></div>
+  
+            <button id="calculator-profit-n-loss"
+                    class="btn btn-warning">
+              Calculate</button>
+          </div>
+        
+      <div class="col-md greyed"></div>
+    </div>
+  </div>
+  <footer>
+
+    <ul>
+        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href=""><i class="fab fa-instagram"></i></a></li>
+        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+        <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+    </ul>
+
+</footer>
+
+  </body>
+  </html>

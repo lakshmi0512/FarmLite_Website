@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1ba2cf90f3.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./assests/logo.png" type="image/x-icon">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="weather.css" />
+    <title>Weather</title>
+  </head>
+  <body id="body">
+
+    <div class="head"><b>Weather Prediction for farmers</b></div>
+    <header>
+      <input
+        type="text"
+        autocomplete="on"
+        class="search"
+        placeholder="Search city"
+      />
+    </header>
+
+    <div class="row disp">
+      <div class="column-9">
+        <section class="location">
+          <div class="city">CITY</div>
+          <div class="date">DATE</div>
+        </section>
+        <div class="current">
+          <div class="temp">TEMP<span>°C</span></div>
+          <div class="weather">WEATHER</div>
+          <div class="humidity">HUMIDITY</div>
+          <div class="hi-low">Hi°C/lo°C</div>
+        </div>
+      </div>
+      <div class="column-3">
+        <div class="center">
+          <image
+            class="logo"
+            id="icon"
+            src="http://openweathermap.org/img/wn/10d.png"
+            alt="icon"
+          />
+        </div>
+      </div>
+    </div>
+
+  </body>
+  <script src="weather.js"></script>
+</html>

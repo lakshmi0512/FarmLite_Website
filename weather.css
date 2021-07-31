@@ -1,0 +1,140 @@
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("sun.jpg");
+  background-size: cover;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: auto;
+}
+.head {
+  background-color: #9afe2e;
+  background: #9afe2e;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 3px#848484;
+  font-size: 30px;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 15px 15px;
+}
+header input {
+  margin-top: 40px;
+  width: 100%;
+  max-width: 280px;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 16px 0px 16px 0px;
+  border-bottom: 3px solid #9afe2e;
+  color: #313131;
+  font-size: 20px;
+  font-weight: 300;
+  transition: 0.2s ease-out;
+}
+header input:focus {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.disp {
+  border: 3px solid;
+  border-color: #9ecf68;
+  border-style: rounded;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  margin-top: 25px;
+  margin-right: 70px;
+  margin-left: 70px;
+  box-shadow: 1px 5px#BEF781;
+}
+
+.location .city {
+  color: #0b173b;
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  margin-top: 25px;
+  margin-left: 50px;
+  text-shadow: 2px 4px #5882fa;
+}
+
+.location .date {
+  color: #0b173b;
+  font-size: 16px;
+  margin-left: 50px;
+  margin-top: 5px;
+}
+
+.current .temp {
+  color: #0b173b;
+  font-size: 50px;
+  font-weight: 900;
+  margin: 30px 0px;
+  margin-left: 50px;
+  text-shadow: 2px 7px #5882fa;
+}
+
+.current .temp span {
+  font-weight: 500;
+  margin-left: 50px;
+}
+
+.current .weather {
+  color: #0b173b;
+  font-size: 32px;
+  font-weight: 700;
+  font-style: italic;
+  margin-bottom: 15px;
+  margin-left: 50px;
+  text-shadow: 0px 4px#5882FA;
+}
+.current .humidity {
+  color: #0b173b;
+  font-size: 24px;
+  font-weight: 500;
+  margin-left: 50px;
+  text-shadow: 0px 4px #5882fa;
+}
+.current .hi-low {
+  color: #0b173b;
+  font-size: 24px;
+  font-weight: 500;
+  margin-left: 50px;
+  margin-bottom: 5px;
+  text-shadow: 0px 4px #5882fa;
+}
+.logo {
+  border: 2px solid black;
+  height: 150px;
+}
+.column-9 {
+  float: left;
+  width: 66.66%;
+}
+.column-3 {
+  float: left;
+  width: 33.33%;
+}
+
+.center {
+  margin-top: 25%;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  [class*="column-"] {
+    width: 100%;
+  }
+}

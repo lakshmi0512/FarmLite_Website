@@ -1,0 +1,639 @@
+*,
+body {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  letter-spacing: 1px;
+  transition: all 0.5s;
+  color: inherit;
+  scroll-behavior: smooth;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 0.99fr;
+  grid-template-rows: 15vh repeat(3, 80vh) 15vh;
+  align-content: space-around;
+  justify-content: space-evenly;
+}
+
+section > nav {
+  display: grid;
+  grid-template-columns: 15vw 50vw;
+  grid-template-rows: 0.8fr;
+  align-content: space-around;
+  justify-content: space-around;
+  background-color: whitesmoke;
+}
+
+section > nav > span {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: grey;
+}
+
+section > nav > span > a > i {
+  color: #323232;
+}
+
+section > nav > ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+section > nav > ul > li {
+  position: relative;
+  font-size: 0.5rem;
+}
+
+section > nav > ul > li > a {
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  color: grey;
+}
+
+section > nav > ul > li > a > i {
+  color: #323232;
+  font-size: 3rem;
+}
+.fa-shopping-cart:before {
+  content: "\f07a";
+  font-size:15px;
+}
+.fa-camera{
+  margin-left:2px;
+  font-size: 20px;
+}
+.bg{
+  width:200%
+}
+.cart-icon{
+  display: none;
+}
+
+.items-count {
+  position: absolute;
+  padding: 5px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  font-size: 0.9rem;
+  border-radius: 30px;
+  top: -40%;
+}
+
+.intro{
+  background-image: url("../assests/ricefield.jpg");
+  background-size: 100% 100%;
+  display: flex;
+  align-content: center;
+  
+}
+
+.intro > div{
+  text-align: center;
+  font-size: 25px;
+  margin-top:50px;
+  padding:50px;
+}
+
+.rice {
+  background-image: url("../assests/rice.jpg");
+  background-size: 100% 100%;
+  display: grid;
+  align-content: space-around;
+  justify-content: space-evenly;
+}
+
+.rice > span {
+  font-size: 8rem;
+  color: white;
+  letter-spacing: 1.5px;
+  text-transform: capitalize;
+  padding-right: 200px;
+  line-height: 150px;
+  padding-top: 50px;
+}
+
+.rice > button {
+  height: 8.5vh;
+  width: 13vw;
+  background-color: transparent;
+  border: 1.5px solid white;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: white;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.rice > button > a {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.rice > button:hover {
+  transition: all 0.5s;
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.rice > button > a > i {
+  font-size: 1.8rem;
+}
+
+
+.millets {
+  background-image: url("../assests/millets.jpg");
+  background-size: 100% 100%;
+  display: grid;
+  align-content: space-around;
+  justify-content: space-evenly;
+}
+
+.millets > span {
+  font-size: 8rem;
+  color: white;
+  letter-spacing: 1.5px;
+  text-transform: capitalize;
+  padding-right: 200px;
+  line-height: 150px;
+  padding-top: 50px;
+}
+
+.millets > button {
+  height: 8.5vh;
+  width: 13vw;
+  background-color: transparent;
+  border: 1.5px solid white;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: white;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.millets > button > a {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.millets > button:hover {
+  transition: all 0.5s;
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.millets > button > a > i {
+  font-size: 1.8rem;
+}
+
+.fruits {
+  background-image: url("../assests/62.jpg");
+  background-size: 100% 100%;
+  display: grid;
+  align-content: space-around;
+  justify-content: space-evenly;
+}
+
+.fruits > span {
+  font-weight: bold;
+  font-size: 8rem;
+  color: white;
+  text-transform: capitalize;
+  padding-top: 80px;
+}
+
+.fruits > button {
+  height: 8.5vh;
+  width: 13vw;
+  background-color: transparent;
+  border: 1.5px solid white;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: white;
+  letter-spacing: 1px;
+  justify-self: center;
+  margin-bottom: 30px;
+}
+
+.fruits > button > a {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.fruits > button:hover {
+  transition: all 0.5s;
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.fruits > button > a > i {
+  font-size: 1.8rem;
+}
+
+section > footer {
+  display: grid;
+  grid-template-columns: 13vw 50vw;
+  grid-template-rows: 0.8fr;
+  align-content: space-around;
+  justify-content: space-around;
+  background-color: whitesmoke;
+}
+
+section > footer > span {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: grey;
+}
+
+section > footer > span > a > i {
+  color: #323232;
+  font-size: 1.8rem;
+}
+
+section > footer > ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+section > footer > ul > li {
+  border: 1px solid #323232;
+  padding: 15px;
+  border-radius: 50px;
+  background-color: transparent;
+  transition: all 0.5s;
+  position: relative;
+}
+
+section > footer > ul > li:hover {
+  background-color: #323232;
+  border: none;
+}
+
+section > footer > ul > li > a {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: grey;
+}
+
+section > footer > ul > li:hover a {
+  color: white;
+  transition: all 0.5s;
+}
+
+section > footer > ul > li:nth-last-child(1) {
+  border: none;
+  pointer-events: none;
+}
+
+.bottom-items-count {
+  position: absolute;
+  padding: 5px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  font-size: 0.9rem;
+  border-radius: 30px;
+  bottom: 40%;
+}
+
+.cart {
+  position: fixed;
+  height: 98.5%;
+  width: 25vw;
+  background-color: whitesmoke;
+  top: 0.5%;
+  right: 0.5%;
+  display: grid;
+  grid-template-columns: 0.95fr;
+  grid-template-rows: 10vh 60vh 10vh;
+  align-content: space-around;
+  justify-content: space-evenly;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  z-index: -9;
+  transition: all 0.5s;
+}
+
+.cart > header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.cart > header > span {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: grey;
+  text-transform: capitalize;
+}
+
+.cart > header > span > a > i {
+  color: #323232;
+}
+
+.exit > i {
+  font-size: 2rem;
+  color: #323232;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.cart > main {
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 5vh 1fr;
+  align-content: space-around;
+  justify-content: space-evenly;
+  transition: all 0.5s;
+}
+
+.cart > main > ol {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.cart > main > ol > li {
+  font-weight: lighter;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 0px 21px;
+  color: grey;
+}
+
+.cart > main > section {
+  overflow: scroll;
+  transition: all 0.5s;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  align-content: space-around;
+  justify-content: space-evenly;
+}
+
+.cart > main > section > ul > li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 5vh;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.cart > footer {
+  display: grid;
+  grid-template-columns: 0.9fr;
+  grid-template-rows: 0.9fr;
+  align-content: space-around;
+  justify-content: space-evenly;
+}
+
+.cart > footer > ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.cart > footer > ul > li {
+  background-color: #323232;
+  border-radius: 50px;
+  padding: 13px;
+  transition: all 0.5s;
+}
+
+.cart > footer > ul > li:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.cart > footer > ul > li > a > i {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: white;
+  transition: all 0.5s;
+}
+
+.cart > footer > ul > li:hover i {
+  color: #323232;
+}
+ 
+#calc{
+  background-color: bisque;
+  align-content: center;
+}
+.videos{
+  align-content: space-around;
+  margin-left:50px;
+  display:flex
+}
+.weatherbg {
+  background-image: url("../assests/farmweather.jpg");
+  background-size: 100% 100%;
+  display: grid;
+  align-content: center;
+  justify-content: space-evenly;
+}
+
+.weatherbg > span {
+  font-size: 8rem;
+  color: black;
+  letter-spacing: 1.5px;
+  text-transform: capitalize;
+  padding-right: 200px;
+  line-height: 150px;
+  padding-top: 50px;
+}
+.weatherbg > button {
+  height: 8.5vh;
+  width: 13vw;
+  background-color: transparent;
+  border: 1.5px solid white;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: black;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  align-content: center;
+}
+
+.weatherbg > button > a {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.weatherbg > button:hover {
+  transition: all 0.5s;
+  cursor: pointer;
+  background-color: black;
+  border: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.weatherbg > button > a > i {
+  font-size: 1.8rem;
+}
+.crop > span {
+  font-size: 8rem;
+  color: black;
+  letter-spacing: 1.5px;
+  text-transform: capitalize;
+  padding-right: 200px;
+  line-height: 150px;
+  padding-top: 50px;
+}
+
+.crop > button {
+  height: 8.5vh;
+  width: 13vw;
+  background-color: transparent;
+  border: 1.5px solid black;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: black;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.crop > button > a {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.crop > button:hover {
+  transition: all 0.5s;
+  cursor: pointer;
+  background-color:white;
+  border: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.crop > button > a > i {
+  font-size: 1.8rem;
+}
+.crop .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.crop .btn:hover {
+  background-color: black;
+}
+.rotation{
+  background-image: url("crop_rotaion.jpg");
+  align-content: center;
+  display: flex;
+  text-align: center;
+  margin-left:50px;
+  background-size: 100% 100%;
+  display: grid;
+  align-content: space-around;
+  justify-content: space-evenly;
+  background-size: 100% 100%;
+
+
+}
+
+
+.rotation > span {
+  font-weight: bold;
+  font-size: 8rem;
+  color: white;
+  text-transform: capitalize;
+  padding-top: 80px;
+}
+
+.rotation > button {
+  height: 8.5vh;
+  width: 13vw;
+  background-color: transparent;
+  border: 1.5px solid white;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: white;
+  letter-spacing: 1px;
+  justify-self: center;
+  margin-bottom: 30px;
+}
+
+.rotation > button > a {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.rotation > button:hover {
+  transition: all 0.5s;
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.rotation > button > a > i {
+  font-size: 1.8rem;
+}
+.imageprocess{
+  align-content: center;
+  background-color: lavender;
+}
+.comment {
+  width: 40%;
+  height: 100px;
+  padding: 10px;
+  border-left: 6px solid #095484;
+  background-color: #d0e2bc;
+  font: 1.4em/1.6em cursive;
+  color: #095484;
+  align-content: center;
+}
