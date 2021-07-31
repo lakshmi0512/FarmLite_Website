@@ -1,3 +1,10 @@
+# HACKX 
+HackX is a Hackathon conducted by IEEE-SPS VIT, this project is under the domain OPEN INNOVATION.
+
+# Problem Statement
+Maximum number of farmers are uneducated . They are not aware of agricultural technologies. They are still using traditional practices . They are travelling long distances just to get to know about their soil fertility , crop problems, to get good fertilizers, pesticides. And so many are facing weather related problems. Regulation of  water in their agricultural lands on time basis and they are facing difficulties to sell their crop at their desired prices, farmers are facing difficulties in calculating profit loss .and some novice farmers find difficulties to farm
+After some period, when farmers find no crops to be grown they can use crop rotation technique and some plants require more fertility for their growth while others require less. So we included crop rotation methodology through which farmer can gain knowledge on this .to know more or get practical knowledge, farmers can see youtube videos which will be included in the website. This pandemic situation has affected all domain people and there was a huge economic loss.It affected farmers all over the world. So through this website ,we are providing future pandemic prediction technology using artificial intelligence
+
 # Farm Lite
 
 Farm Lite website is an online website for farmers with the following features:
