@@ -30,7 +30,7 @@ using ML PYTHON and Matlab
 
 ## Silent Features:
 
-* Unique Minimal and dynaic design.
+* Unique Minimal and dynamic design.
 * Easy Logic.
 * Stores the data of user's items which are added to cart.
 * Data is stored in the Local Storage of browser.
